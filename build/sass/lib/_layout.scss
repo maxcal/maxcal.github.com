@@ -1,0 +1,109 @@
+$sidepad : 20%;
+$minpad : 15px;
+$footer_height : 150 + ($minpad * 2);
+
+$big_min : 960px;
+$big_width : 950px;
+
+$med_min : 540px;
+$med_max : 959px;
+
+$small_max : 420px;
+
+$innard_sidepad : 10px;
+
+.outards {
+    padding: $minpad $sidepad;
+}
+
+.innards {
+    padding: $minpad $innard_sidepad;
+    position: relative;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.slide {
+    margin-bottom: 16px;
+}
+
+.header {
+    padding: 30px $minpad 0;
+}
+
+.intro {
+    margin-bottom: 1.2em;
+}
+
+@media all and (max-width: 420px) {
+    h1 {
+        .sep {
+            display: none;   
+        }
+        .title, .name {
+            display: block;
+        }
+    }
+    .innards {
+        padding: $minpad $innard_sidepad;
+        width: 320px - $innard_sidepad * 2;
+    }
+}
+
+@media all and (min-width: 420px) and (max-width: 560px) {
+    .sep {
+            display: none;   
+    }
+    .name {
+        display: block;
+    }
+    .innards {
+        width: 420px - $innard_sidepad * 2;
+    }
+}
+
+@media all and (min-width: 560px) and (max-width: 720px) {
+    .innards {
+        width: 560px - $innard_sidepad * 2;
+    }
+}
+
+@media all and (min-width: 720px) and (max-width: 960px) {
+    .innards {
+        width: 720px - $innard_sidepad * 2;
+    }
+    .slide {
+        width: 20%;
+        display: inline-block;
+        float:left;
+    }
+}
+
+@media all and (min-width: 960px){
+    .innards {
+        width: 960px - $innard_sidepad * 2;
+    }
+    .slide {
+        width: 17%;
+        display: inline-block;
+        float:left;
+    }
+}
+
+
+
+html, body, #wrap { height: 100%; }
+
+body > #wrap {height: auto; min-height: 100%;}
+
+.main { 
+    padding-bottom: $footer_height; 
+
+}  /* must be same height as the footer */
+
+.footer {
+        position: relative;
+	margin-top: -$footer_height; /* negative value of footer height */
+	height: $footer_height;
+	clear:both;
+} 

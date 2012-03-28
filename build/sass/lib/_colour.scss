@@ -1,0 +1,34 @@
+html {
+    background-color: #242424;
+    color: #F2F2F2;
+
+     background-color: #242424;
+     @include background(image-url("foo.png"),
+                      linear-gradient(top, rgb(51,51,51) 0%, rgb(15,15,15) 64%));
+}
+
+.outards {
+
+}
+
+.innards {
+   // background-color: rgba(white, 0.10); 
+}
+
+.header {
+   // background-color: rgba(white, 0.05); 
+}
+.main {
+   // background-color: rgba(black, 0.05); 
+}
+.footer {
+   // background-color: rgba(black, 0.30); 
+}
+
+.findme {
+    color: #1A91C4;
+}
+
+dd, li {
+    color: #CFF3FF;
+}
