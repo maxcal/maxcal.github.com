@@ -4,8 +4,8 @@
         <meta charset="utf-8" />
         <title>Maxcal</title>
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="/screen.css?v1" />
-        <link rel="stylesheet" type="text/css" href="/print.css" />
+        <link rel="stylesheet" type="text/css" media="screen"  href="/screen.css" />
+        <link rel="stylesheet" type="text/css" media="print" href="/print.css" />
         <!--[if IE]>
                 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -13,10 +13,6 @@
 
     <body class="clearfix wrap">
         <header class="header outards">
-            <a id="github" href="https://github.com/hagenburger">
-                <span>Fork me on GitHub!</span>
-                <span>Get free lemonade!</span>
-            </a>
             <div class="innards clearfix">
                 <h1>
                     <span class="name">Max&nbsp;Calabrese</span>
@@ -49,8 +45,8 @@
                     <section class="slide">
                         <h3>Projects</h3>
                         <ul>
-                            <li>vieierstatoil.no</li>
-                            <li>Twigpress</li>
+                            <li><a href="http://www.vieierstatoil.no">vieierstatoil.no</a></li>
+                            <li><a href="http://www.greenpeace.org/sweden/se/om-oss/rw3/">Greenpeace 40 år</a></li>
                         </ul>
                     </section>
                     <section class="slide">
@@ -71,17 +67,17 @@
                             <li>Symfony</li>
                         </ul>
                     </section>
-                </div>
-               
+                </div>      
             </div>
         </div>
         <footer class="footer outards">
             <div class="innards">
-                 <a id="octucat" href="http://github.com/maxcal" title="Here be snow-octocats!">
-                    <span>Fork me on GitHub!</span>
-                </a>
+                <ul class="clearfix footerlinks">
+                    <li><a id="octucat" href="http://github.com/maxcal" title="Here be octocats!"><span>Fork me on GitHub!</span></a></li>
+                    <li><a id="linkedin" href="http://www.linkedin.com/pub/max-calabrese/28/1a8/87a" class="logo linkedin" title="see me resume at Linked In"><span>Read my resume:</span></a></li>
+                    <li><a id="email" href="mailto:max.calabrese@ymail.com" title="Get in touch"><span>Get in touch</span></a></li>
+                </ul>
             </div>
         </footer>
-
     </body>
 </html>
