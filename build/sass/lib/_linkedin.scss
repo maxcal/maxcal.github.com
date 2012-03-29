@@ -1,0 +1,22 @@
+#linkedin {
+    
+    background: url('img/linkedin.png') -1px bottom no-repeat transparent;
+
+    $width : 250px;
+    $height: 71px;
+    $pad_top : 0px;
+    $pad_left : 0px;
+
+    padding: $pad_top 0 0 $pad_left;
+    width: 250px;
+    height: 81px;
+    display: block;
+
+    vertical-align: top;
+    text-align: left;
+
+    span {
+        font-size: 1.1em;
+        color: white;
+    }
+}

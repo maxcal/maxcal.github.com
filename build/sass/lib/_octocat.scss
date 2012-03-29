@@ -1,0 +1,23 @@
+#octucat {
+
+    $height: 312px;
+    $padding: 298px;
+    $width: 383px;
+    margin-left: -90px;
+    margin-right: -80px;
+    width: 383px;
+    height: $height - $padding;
+    padding-top: $padding;
+    display: block;
+    margin-top: -50px;
+    postition: relative;
+
+    background: transparent url('/img/octo-snow-cat.png') top left no-repeat;
+    text-decoration: none;
+    text-align:center;
+    color: white;
+
+    span {
+        display: none;
+    }
+}

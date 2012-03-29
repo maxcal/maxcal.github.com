@@ -20,12 +20,13 @@ h2 {
 }
 
 h3 {
-    color: #7AD7FF;
+    color: #1A91C4;
     margin-bottom: 0.3em;
 }
 
-dt {
-    color: #1A91C4;
+a {
+    color: #7AD7FF;
+    text-decoration: none;
 }
 
 p {
@@ -34,4 +35,12 @@ p {
 
 .title, .sep {
     font-weight: 300;
+}
+
+#email {
+    font-size: 2.4em;
+    font-weight: 700;
+    padding-top: 0.6em;
+    display: block;
+    color: #FFF;
 }

@@ -1,11 +1,15 @@
 html {
-    background-color: #242424;
-    color: #F2F2F2;
-
-     background-color: #242424;
-     @include background(image-url("foo.png"),
-                      linear-gradient(top, rgb(51,51,51) 0%, rgb(15,15,15) 64%));
+     color: #F2F2F2;
+     background-color: rgb(15,15,15);
+      
 }
+
+body {
+      @include background(image-url("foo.png"),
+        linear-gradient(bottom, rgb(15,15,15) 0%, rgb(51,51,51) 64%));
+      background-repeat: no-repeat;
+}
+
 
 .outards {
 

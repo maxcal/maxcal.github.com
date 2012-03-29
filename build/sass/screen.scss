@@ -5,10 +5,14 @@
 @import "lib/layout";
 @import "lib/colour";
 @import "lib/github";
+@import "lib/octocat";
+@import "lib/linkedin";
 
 /* CLEAR FIX*/
-.clearfix:after {content: ".";
+.clearfix:after {
+        content: ".";
 	display: block;
 	height: 0;
 	clear: both;
-	visibility: hidden;}
+	visibility: hidden;
+}

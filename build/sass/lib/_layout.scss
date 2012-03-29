@@ -12,8 +12,10 @@ $small_max : 420px;
 
 $innard_sidepad : 10px;
 
+
 .outards {
     padding: $minpad $sidepad;
+    float: left;
 }
 
 .innards {
@@ -35,6 +37,14 @@ $innard_sidepad : 10px;
     margin-bottom: 1.2em;
 }
 
+.footerlinks {
+    overflow:visible;
+    li {
+        position: relative;
+        float:left;
+    }
+}
+
 @media all and (max-width: 420px) {
     h1 {
         .sep {
@@ -51,6 +61,7 @@ $innard_sidepad : 10px;
 }
 
 @media all and (min-width: 420px) and (max-width: 560px) {
+   
     .sep {
             display: none;   
     }
@@ -60,11 +71,49 @@ $innard_sidepad : 10px;
     .innards {
         width: 420px - $innard_sidepad * 2;
     }
+    .slide {
+       
+    }
+
+}
+
+@media all and (max-width: 560px) {
+     body {
+        text-align: center;
+
+        #octucat {
+            display: inline-block;
+            margin: 0;
+            margin-left: -20px;
+        }
+
+        #linkedin {
+            display: inline-block;
+            width: 220px;
+        }
+
+     }
+
+     
+
+     .footerlinks {
+        overflow:visible;
+        li {
+            disolay: inline-block;
+            position: relative;
+            float:none;
+        }
+    }
 }
 
 @media all and (min-width: 560px) and (max-width: 720px) {
     .innards {
         width: 560px - $innard_sidepad * 2;
+    }
+    .slide {
+        width: 25%;
+        display: inline-block;
+        float:left;
     }
 }
 
@@ -90,20 +139,3 @@ $innard_sidepad : 10px;
     }
 }
 
-
-
-html, body, #wrap { height: 100%; }
-
-body > #wrap {height: auto; min-height: 100%;}
-
-.main { 
-    padding-bottom: $footer_height; 
-
-}  /* must be same height as the footer */
-
-.footer {
-        position: relative;
-	margin-top: -$footer_height; /* negative value of footer height */
-	height: $footer_height;
-	clear:both;
-} 

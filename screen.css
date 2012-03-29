@@ -1,4 +1,3 @@
-/* line 17, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,50 +19,41 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/* line 1, build/sass/lib/_type.scss */
 body {
   font-family: 'Lato', helvetica, arial, sans-serif;
   font-size: 97%;
@@ -73,46 +63,48 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* line 11, build/sass/lib/_type.scss */
 h1 {
   font-weight: 700;
   font-size: 1.9em;
 }
 
-/* line 16, build/sass/lib/_type.scss */
 h2 {
   font-size: 1.4em;
   margin-bottom: 0.6em;
   word-spacing: 0.2em;
 }
 
-/* line 22, build/sass/lib/_type.scss */
 h3 {
-  color: #7AD7FF;
+  color: #1A91C4;
   margin-bottom: 0.3em;
 }
 
-/* line 27, build/sass/lib/_type.scss */
-dt {
-  color: #1A91C4;
+a {
+  color: #7AD7FF;
+  text-decoration: none;
 }
 
-/* line 31, build/sass/lib/_type.scss */
 p {
   margin-bottom: 0.3em;
 }
 
-/* line 35, build/sass/lib/_type.scss */
 .title, .sep {
   font-weight: 300;
 }
 
-/* line 15, build/sass/lib/_layout.scss */
-.outards  {
-  padding: 15px 20%;
+#email {
+  font-size: 2.4em;
+  font-weight: 700;
+  padding-top: 0.6em;
+  display: block;
+  color: #FFF;
 }
 
-/* line 19, build/sass/lib/_layout.scss */
+.outards  {
+  padding: 15px 20%;
+  float: left;
+}
+
 .innards {
   padding: 15px 10px;
   position: relative;
@@ -120,66 +112,91 @@ p {
   margin-right: auto !important;
 }
 
-/* line 26, build/sass/lib/_layout.scss */
 .slide {
   margin-bottom: 16px;
 }
 
-/* line 30, build/sass/lib/_layout.scss */
 .header {
   padding: 30px 15px 0;
 }
 
-/* line 34, build/sass/lib/_layout.scss */
 .intro {
   margin-bottom: 1.2em;
 }
 
+.footerlinks {
+  overflow: visible;
+}
+.footerlinks li {
+  position: relative;
+  float: left;
+}
+
 @media all and (max-width: 420px) {
-  /* line 40, build/sass/lib/_layout.scss */
   h1 .sep {
     display: none;
   }
-  /* line 43, build/sass/lib/_layout.scss */
   h1 .title, h1 .name {
     display: block;
   }
 
-  /* line 47, build/sass/lib/_layout.scss */
   .innards {
     padding: 15px 10px;
     width: 300px;
   }
 }
 @media all and (min-width: 420px) and (max-width: 560px) {
-  /* line 54, build/sass/lib/_layout.scss */
   .sep {
     display: none;
   }
 
-  /* line 57, build/sass/lib/_layout.scss */
   .name {
     display: block;
   }
 
-  /* line 60, build/sass/lib/_layout.scss */
   .innards {
     width: 400px;
   }
 }
+@media all and (max-width: 560px) {
+  body {
+    text-align: center;
+  }
+  body #octucat {
+    display: inline-block;
+    margin: 0;
+    margin-left: -20px;
+  }
+  body #linkedin {
+    display: inline-block;
+    width: 220px;
+  }
+
+  .footerlinks {
+    overflow: visible;
+  }
+  .footerlinks li {
+    disolay: inline-block;
+    position: relative;
+    float: none;
+  }
+}
 @media all and (min-width: 560px) and (max-width: 720px) {
-  /* line 66, build/sass/lib/_layout.scss */
   .innards {
     width: 540px;
   }
+
+  .slide {
+    width: 25%;
+    display: inline-block;
+    float: left;
+  }
 }
 @media all and (min-width: 720px) and (max-width: 960px) {
-  /* line 72, build/sass/lib/_layout.scss */
   .innards {
     width: 700px;
   }
 
-  /* line 75, build/sass/lib/_layout.scss */
   .slide {
     width: 20%;
     display: inline-block;
@@ -187,68 +204,39 @@ p {
   }
 }
 @media all and (min-width: 960px) {
-  /* line 83, build/sass/lib/_layout.scss */
   .innards {
     width: 940px;
   }
 
-  /* line 86, build/sass/lib/_layout.scss */
   .slide {
     width: 17%;
     display: inline-block;
     float: left;
   }
 }
-/* line 95, build/sass/lib/_layout.scss */
-html, body, #wrap {
-  height: 100%;
-}
-
-/* line 97, build/sass/lib/_layout.scss */
-body > #wrap {
-  height: auto;
-  min-height: 100%;
-}
-
-/* line 99, build/sass/lib/_layout.scss */
-.main {
-  padding-bottom: 180px;
-}
-
-/* must be same height as the footer */
-/* line 104, build/sass/lib/_layout.scss */
-.footer {
-  position: relative;
-  margin-top: -180px;
-  /* negative value of footer height */
-  height: 180px;
-  clear: both;
-}
-
-/* line 1, build/sass/lib/_colour.scss */
 html {
-  background-color: #242424;
   color: #F2F2F2;
-  background-color: #242424;
-  background: url('/../images/foo.png'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(64%, #0f0f0f));
-  background: url('/../images/foo.png'), -webkit-linear-gradient(top, #333333 0%, #0f0f0f 64%);
-  background: url('/../images/foo.png'), -moz-linear-gradient(top, #333333 0%, #0f0f0f 64%);
-  background: url('/../images/foo.png'), -o-linear-gradient(top, #333333 0%, #0f0f0f 64%);
-  background: url('/../images/foo.png'), -ms-linear-gradient(top, #333333 0%, #0f0f0f 64%);
-  background: url('/../images/foo.png'), linear-gradient(top, #333333 0%, #0f0f0f 64%);
+  background-color: #0f0f0f;
 }
 
-/* line 28, build/sass/lib/_colour.scss */
+body {
+  background: url('/../img/foo.png'), -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #0f0f0f), color-stop(64%, #333333));
+  background: url('/../img/foo.png'), -webkit-linear-gradient(bottom, #0f0f0f 0%, #333333 64%);
+  background: url('/../img/foo.png'), -moz-linear-gradient(bottom, #0f0f0f 0%, #333333 64%);
+  background: url('/../img/foo.png'), -o-linear-gradient(bottom, #0f0f0f 0%, #333333 64%);
+  background: url('/../img/foo.png'), -ms-linear-gradient(bottom, #0f0f0f 0%, #333333 64%);
+  background: url('/../img/foo.png'), linear-gradient(bottom, #0f0f0f 0%, #333333 64%);
+  background-repeat: no-repeat;
+}
+
 .findme {
   color: #1A91C4;
 }
 
-/* line 32, build/sass/lib/_colour.scss */
 dd, li {
   color: #CFF3FF;
 }
 
-/* line 1, build/sass/lib/_github.scss */
 #github {
   right: -65px;
   height: 30px;
@@ -256,13 +244,12 @@ dd, li {
   position: absolute;
   text-decoration: none;
   width: 250px;
-  -moz-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 9, build/sass/lib/_github.scss */
 #github span {
   background: black;
   color: white;
@@ -272,36 +259,60 @@ dd, li {
   position: absolute;
   text-align: center;
   width: 250px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
-  -o-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
   box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
-  -moz-transition-property: opacity;
-  -webkit-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
-  -moz-transition-duration: 1s;
-  -webkit-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
+  -webkit-transition: opacity, 1s;
+  -moz-transition: opacity, 1s;
+  -ms-transition: opacity, 1s;
+  -o-transition: opacity, 1s;
+  transition: opacity, 1s;
 }
-/* line 22, build/sass/lib/_github.scss */
 #github span:last-child {
   /* this is the backside */
   background: red;
   opacity: 0;
 }
-/* line 29, build/sass/lib/_github.scss */
 #github :hover span:first-child {
   opacity: 0;
 }
-/* line 32, build/sass/lib/_github.scss */
 #github :hover span:last-child {
   opacity: 1;
 }
 
+#octucat {
+  margin-left: -90px;
+  margin-right: -80px;
+  width: 383px;
+  height: 14px;
+  padding-top: 298px;
+  display: block;
+  margin-top: -50px;
+  postition: relative;
+  background: transparent url("/img/octo-snow-cat.png") top left no-repeat;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+#octucat span {
+  display: none;
+}
+
+#linkedin {
+  background: url("img/linkedin.png") -1px bottom no-repeat transparent;
+  padding: 0px 0 0 0px;
+  width: 250px;
+  height: 81px;
+  display: block;
+  vertical-align: top;
+  text-align: left;
+}
+#linkedin span {
+  font-size: 1.1em;
+  color: white;
+}
+
 /* CLEAR FIX*/
-/* line 10, build/sass/screen.scss */
 .clearfix:after {
   content: ".";
   display: block;
